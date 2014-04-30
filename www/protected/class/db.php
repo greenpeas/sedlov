@@ -1,5 +1,5 @@
 <?php
-
+include_once 'db_config.php';
 // класс для работы с БД
 
 class db {
@@ -10,7 +10,7 @@ class db {
 
     function __construct() {
         // ("myhost","myuser","mypassw","mybd")
-        $this->link = mysqli_connect('127.0.0.1', 'sedlov', '127000', 'sedlov');
+        $this->link = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_DATABASE);
         mysqli_query($this->link, "SET NAMES 'utf8'");
         $this->result = false;
         $this->error = false;
