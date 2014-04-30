@@ -1,0 +1,508 @@
+html {
+    margin: 0;
+    padding: 10;
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif;
+    font-size: 12px;
+    color: #c5c5c5;
+    padding: 20px;
+    margin: 0;
+    /*background-color:#000;*/
+    background: #000 url("images/kod.jpg") no-repeat left center;
+
+    /*background: #000 url("images/bg.jpg") no-repeat right bottom;*/
+
+}
+img {
+    border:0;
+}
+
+a:link, a:visited {
+    color : #8cb7fd;
+    text-decoration  : none;	  
+}
+
+a:hover {
+    color            : #f7e273;
+    text-decoration  : underline;
+}
+
+h1{
+    color:#f7e7b0;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-shadow: #626262 1px 1px 2px;
+    font-size: 30px;
+    font-family: Bookman Old Style;
+}
+
+
+#head-big-text-block{
+    display:block;
+    float:left;
+    /*background: url("images/light_1px.png");*/
+    width:760px;
+
+}
+
+#head-big-text1{
+    font-family: Bookman Old Style;
+    /*color:#dd3d00;*/
+    color:#c13e3e;
+    font-weight:bold;
+    font-size:50px;
+    text-shadow: #626262 1px 1px 2px;
+    margin-top:0px;
+    text-align:left;
+}
+#head-big-text2{
+    font-family: Bookman Old Style;
+    color:#c13e3e;
+    font-weight:bold;
+    font-size:30px;
+    text-shadow: #626262 1px 1px 2px;
+    margin-top:0px;
+    text-align:left;
+}
+
+
+
+
+
+
+#main{
+    padding-top: 30px;
+    width: 980px;
+}
+
+#head{
+    /*background-color:#599ae1;*/	
+
+    /*border: 1px #919191 solid;*/
+    color : #599ae1;
+    margin-bottom:10px;
+    padding:0px;
+    width:978px;
+    height:250px;
+    text-align:left;
+    display:block;
+}
+
+
+#left-column {
+    float: left;
+    width: 180px;
+}
+
+#center-column {
+    background-color: #fff;
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    border-radius: 15px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px 10px 20px 10px;
+    width: 768px;
+    border: 1px #919191 solid;
+}
+
+.left-module-block {    
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    border-radius: 15px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+    float: left;    
+    width: 180px;
+    margin-bottom:10px;
+}
+
+.module_name{
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 10px 10px 0px 0px; /* Firefox */
+    -webkit-border-radius: 10px 10px 0px 0px; /* Safari, Chrome */
+    -khtml-border-radius: 10px 10px 0px 0px; /* KHTML */
+    border-radius: 10px 10px 0px 0px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+
+    background: #599ae1 url("images/lines/blue-line.png") repeat-x;
+    color:#fff;
+    padding:5px;
+
+    font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+
+
+}
+
+.module-content{
+    margin-top:0px;	
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 0px 0px 10px 10px; /* Firefox */
+    -webkit-border-radius: 0px 0px 10px 10px; /* Safari, Chrome */
+    -khtml-border-radius: 0px 0px 10px 10px; /* KHTML */
+    border-radius: 0px 0px 10px 10px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: #fff;
+    padding:5px 5px 10px 5px;
+    border: 1px #919191 solid;
+}
+
+
+
+#footer {
+    clear: both;
+    margin-bottom: 20px;
+    width: 980px;
+    font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif;
+    font-size: 10px;
+}
+
+
+a.nav-link:link, a.nav-link:visited{
+    color:#fff;
+    text-decoration  : none;
+    font-weight:bold;
+
+
+}
+
+a.nav-link:hover {
+
+    text-decoration  : underline; 
+
+}
+
+
+a.raspis-not,  a.raspis-not:visited{
+    padding:5px;
+    color:#fff;
+    background-color:#c40000;
+    width:70px;	
+    text-align:center;
+    display: block;
+    border-top:1px #03b827 solid;
+    text-decoration  : underline;
+}
+
+
+a.raspis:link, a.raspis:visited{
+
+    padding:5px;
+    color: #fff;
+    background-color:#028a1e;
+    text-decoration  : underline;
+    width:70px;
+    text-align:center;
+    display: block;
+    border-top:1px #03b827 solid;
+
+}
+
+a.raspis:hover {
+    background-color: #f0eb0b;
+    color: #5e3c2b;	
+}
+
+
+
+
+
+#navline{	
+
+    text-shadow: #626262 1px 1px 1px;
+    text-transform: uppercase;
+
+    clear:both;
+    /* Для хороших браузеров */
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    -khtml-border-radius: 10px; /* KHTML */
+    border-radius: 10px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+    background: #599ae1 url("images/lines/blue-line.png") repeat-x;
+
+    padding:10px;
+    color:#fff;
+    text-align:left;
+}
+
+
+.error{
+    color:#444;	
+    padding:10px;
+    margin-bottom:10px;	
+    height:130px;
+    text-align:left;
+    font-size:18px;	
+    background: #f5ebaf url("images/error-bg.jpg") no-repeat right top;
+    border:1px #cecece solid;
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    border-radius: 15px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+}
+
+span.error-h1 {
+    font-size:30px;
+    color:#f00;
+    font-variant: small-caps;
+    font-weight: bold;
+
+}
+
+
+.good{
+    color:#444;
+    margin-bottom:10px;
+    padding:10px;	
+    height:130px;
+    text-align:left;
+    font-size:18px;
+    background: #bcf1c2 url("images/good-bg.jpg") no-repeat right top;
+    /* Для хороших браузеров */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    border-radius: 15px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+}
+span.good-h1 {
+    font-size:30px;
+    color:#319328;
+    font-variant: small-caps;
+    font-weight: bold;
+
+}
+
+
+.forms td {
+    padding:20px;
+
+}
+
+.loading{
+    display: none;
+    z-index: 70;
+
+}
+
+#cap{
+    background: url('../../images/loading.gif') no-repeat;
+    background-position: center;
+    width:70px;
+    height:50px;
+    padding:0px;
+    border: 1px solid #373737;
+
+}
+
+
+a.free:link, a.free:visited {
+    color : #048404;
+    text-decoration  : none;	  
+}
+
+a.free:hover {
+    color            : #000;
+    text-decoration  : underline;
+}
+
+.raspis-day{
+
+    color : #048404;
+    font-weight:bold;
+
+}
+.gray-text{
+    color : #737373;
+}
+
+#raspis-table{
+
+    background-color:#d3defe;
+    border: 1px solid #bacdfe;
+    padding:20px;
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 15px; /* Firefox */
+    -webkit-border-radius: 15px; /* Safari, Chrome */
+    -khtml-border-radius: 15px; /* KHTML */
+    border-radius: 15px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+}
+.input-lable{
+    font-size:14px;
+    color:#800000;	
+    font-weight: bold;	
+}
+
+.input-lable-small{
+    font-size:10px;
+    color:#4e8f59;
+    margin-bottom:4px;
+}
+
+.input-text{
+    width:230px;
+    border-style:none;	
+}
+.input-text-ramka{
+    border: 1px solid #648657;
+    padding:2px;
+    width:234px;
+    /* Для хороших браузеров */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    border-radius: 5px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */		
+}
+
+.input-button{
+    border: 1px solid #648657;
+    height:24px;
+    background-color:#cfdae7;
+
+    background: url("images/button-bg.png") repeat-x scroll 0 -0px transparent;
+
+    /* Для хороших браузеров */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+    -khtml-border-radius: 5px; /* KHTML */
+    border-radius: 5px; /* CSS3 */
+    /* Для плохих IE */
+    behavior: url('/border-radius.htc'); /* учим IE border-radius */	
+
+}
+.input-button:hover{
+    background-color:#bac9dc;
+    cursor:pointer;
+    background: url("images/button-bg.png") repeat-x scroll 0 -24px transparent;
+}
+
+.reg-input-error{	
+    color:#FF0000;	
+    font-size:10px;
+}
+.pages-list{
+
+    font-size:20px;
+    padding:20px;
+
+}
+.comment-text{
+    font-size:9px;
+    color:#2d801c;
+}
+
+.catalog-block{
+    border: 0px solid #648657;
+    padding:2px;
+    width:700px;
+    /*height:50px;*/
+    margin-bottom:25px;
+    text-align:left;
+}
+
+.cat-cat-link{
+    display:block;
+    float:left;
+    font-size:18px;
+    padding:3px;
+    border: 1px dotted #fff;
+
+}
+.cat-cat-link:hover{	
+    background-color:#dadefa;
+    border: 1px dotted #09515b;
+    text-decoration  : none;	 
+}
+
+.cat-cat-link-sel{
+    display:block;
+    float:left;
+    font-size:18px;
+    padding:3px;
+    background-color:#dadefa;
+    text-decoration  : none;
+    margin:1px;
+}
+
+
+
+.catalog-str-name{	
+    font-size:18px;
+    font-weight:bold;
+    color:#5f1807;
+}
+
+.catalog-str-addres{
+    color:#5d5d5d;	
+}
+
+.menu{
+    border: 1px dotted #fff;
+    display:block;
+    text-align:left;
+    height:20px;	
+    padding:5px;
+    font-size:16px;
+    font-weight:bold;
+    text-decoration: none;	
+}
+.menu:hover{	
+    background-color:#dadefa;
+    border: 1px dotted #09515b;
+    text-decoration: none;	
+}
+
+.SeoTags {
+
+}
+.SeoTags h1{
+    font-weight:normal;
+    font-size:10px;
+    color:#595959;
+
+    font-variant: normal;
+    font-weight: bold;
+    text-shadow: none;
+}
