@@ -8,7 +8,7 @@ $this->setLayout('job');
 <?php
 if (!empty($items)) {
     ?>
-<table border="1">
+<table>
     <thead>
         <tr>
             <td>Значение</td>

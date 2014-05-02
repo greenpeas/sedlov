@@ -10,7 +10,7 @@ $this->setLayout('job');
 <?php
 if (!empty($phones)) {
     ?>
-<table border="1">
+<table>
     <thead>
         <tr>
             <td>Дата приема</td>

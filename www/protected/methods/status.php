@@ -29,10 +29,6 @@ $phones = $db->select($sql);
 
         //$this->page->setFlash('error', 'Неверная пара логина и пароля');
     
-    
-    
 }
-
-//$this->page->setLayout('login');
 
 $this->page->render('status',array("phones"=>$phones));

@@ -506,3 +506,22 @@ a.free:hover {
     font-weight: bold;
     text-shadow: none;
 }
+
+table{
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table thead td, table thead th {
+    padding:5px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+}
+tbody td{
+    padding:5px;
+}
+ tr:nth-child(even) td {
+    background-color: #303030;
+}
