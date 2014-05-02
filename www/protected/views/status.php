@@ -8,7 +8,7 @@ $this->setTitle('Проверка статуса заказа');
 <div style="margin:20px auto; width:300px; text-align: center;">
     
         <div>Введите серийный номер устройства</div>
-        <form method="POST" action="status">
+        <form method="POST" action="">
             <?php if ($this->flash) { ?>
                 <div class="alert alert-error">
                     <a class="close" data-dismiss="alert" href="#">x</a><?php echo $this->showFlash(); ?>
