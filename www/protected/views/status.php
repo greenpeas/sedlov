@@ -8,13 +8,13 @@ $this->setTitle('Проверка статуса заказа');
 <div style="margin:20px auto; width:300px; text-align: center;">
     
         <div>Введите серийный номер устройства</div>
-        <form method="POST" action="">
+        <form method="POST" action="status">
             <?php if ($this->flash) { ?>
                 <div class="alert alert-error">
                     <a class="close" data-dismiss="alert" href="#">x</a><?php echo $this->showFlash(); ?>
                 </div> 
             <?php } ?>
-            <input value="<?php echo!empty($_POST["snum"]) ? $_POST["snum"] : null; ?>"id="snum" placeholder="Серийный номер" type="text" name="snum">
+            <input value="<?php echo!empty($_POST["snum"]) ? $_POST["snum"] : null; ?>" id="snum" placeholder="Серийный номер" type="text" name="snum">
             <br>             
             <button class="btn-info btn" type="submit">Найти</button>      
         </form>
