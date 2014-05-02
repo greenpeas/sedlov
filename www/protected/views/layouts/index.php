@@ -11,7 +11,7 @@
         <meta name="Generator" content="Артёмов Антон">
         <meta name="robots" content="index, follow">
 
-        <LINK HREF="css/style.css" REL= "stylesheet" TYPE="text/css">
+        <LINK HREF="css/style.css?v=1" REL= "stylesheet" TYPE="text/css">
 
     </head>
 
