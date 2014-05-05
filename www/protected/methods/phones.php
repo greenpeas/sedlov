@@ -22,7 +22,7 @@ $sql = "
     FROM `phones` `p`
     LEFT JOIN `ref_brands` `b` ON `p`.`id_brand` = `b`.`id`
     LEFT JOIN `ref_statuses` `s` ON `p`.`id_status` = `s`.`id`
-    
+    ORDER BY `p`.`date_in` 
     ;
     ";
 
