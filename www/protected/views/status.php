@@ -61,8 +61,9 @@ $this->setTitle('Проверка статуса заказа');
             </tbody>
         </table>
         <?php
-    } else
+    } elseif(!empty($_POST))
         echo '<div style="margin: 20px auto; text-align:center;">Нет результатов</div>';
+    
     ?>
 </div>
 <script type="text/javascript">

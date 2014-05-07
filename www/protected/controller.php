@@ -62,4 +62,8 @@ class controller {
     public function status() {
         require 'methods/' . __FUNCTION__ . '.php';
     }
+    
+    public function delete_ref_item() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
 }

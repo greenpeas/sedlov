@@ -63,4 +63,7 @@ if (preg_match("/(^\/edit_ref_item)/i", $_SERVER['REQUEST_URI']))
 if (preg_match("/(^\/status)/i", $_SERVER['REQUEST_URI']))
     $controller->status();
 
+if (preg_match("/(^\/delete_ref_item)/i", $_SERVER['REQUEST_URI']))
+    $controller->delete_ref_item();
+
 $controller->notfound();

@@ -5,7 +5,7 @@ $this->setLayout('job');
 <h1><?php echo $this->title; ?></h1>
 
 
-<form action="" method="post">
+<form action="" method="post" id="ep_form">
     
     <input type="hidden" name="id" value="<?php echo $phone['id']; ?>">
     
@@ -49,7 +49,7 @@ $this->setLayout('job');
     <input type="date" name="date_out" value="<?php echo $phone['date_out']; ?>"><br><br>
     
     Статус<br>
-    <select name="id_status">
+    <select name="id_status" id="cs_sel">
         <?php
             foreach($statuses AS $status){
                 

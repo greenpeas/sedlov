@@ -11,7 +11,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, Trebuchet MS, Arial, Sans-serif;
     font-size: 12px;
     color: #c5c5c5;
-    padding: 50px;
+    padding: 10px;
     margin: 0;
     /*background-color:#000;*/
     background: #000 url("images/kod.jpg") no-repeat left center;
@@ -54,4 +54,9 @@ tbody td{
 }
  tr:nth-child(even) td {
     background-color: #303030;
+}
+
+table.phones {
+    width: 950px;
+    margin: 50px auto;
 }

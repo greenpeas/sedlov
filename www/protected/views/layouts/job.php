@@ -26,9 +26,13 @@
         if (!$this->user->is_guest) {
             ?>
             <div>
-                Меню: <a href="/logout">Выход</a>
-                | <a href="/phones">Телефоны</a>
+                Меню: <a href="/phones">Телефоны</a>
                 | <a href="/refs">Справочники</a>
+                | <a href="status">Проверить статус заказа</a>
+            </div>
+            <div style="text-align: right;">
+                  <a href="/logout">Выход</a>
+                
             </div>
 
             <?php

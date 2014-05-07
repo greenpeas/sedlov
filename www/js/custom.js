@@ -1,8 +1,13 @@
+var cs=0;
 
-
-$('body').delegate('#date_ok','blur',function(){
-    
-    alert('Не забудьте про статус');
-    
-    
+$('body').delegate('#cs_sel','change',function(){
+    cs=1;
 });
+
+$('body').delegate('#ep_form','submit',function(){
+    if(cs===0){
+        if(!confirm('Не забудьте про статус')) return false;
+      
+    }
+});
+
