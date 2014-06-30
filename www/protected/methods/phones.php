@@ -4,8 +4,9 @@
 if ($this->user->is_guest)
     $this->page->redirect('/');
 
-
+// инициализируется соединение с базой данных
 $db = new db;
+// формирование SQL запроса
 $sql = "
     SElECT 
         `p`.`id`,
@@ -25,7 +26,8 @@ $sql = "
     ORDER BY `p`.`date_in` 
     ;
     ";
-
+// получение результатов от БД
 $phones = $db->select($sql);
-
+// Передача массива данных в рендер.
+// Используется отображение "phones"
 $this->page->render('phones',array('phones'=>$phones));

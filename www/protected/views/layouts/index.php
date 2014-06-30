@@ -8,7 +8,6 @@
         <meta name="description" content="<?php echo $this->description; ?>">
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <meta name="keywords" content="ремонт сотовых телефонов, ремонт компьютеров, ремонт телефонов в Ставрополе, ремонт телефонов в Михайловске, Седлов А Е, Седлов Андрей">
-        <meta name="Generator" content="Артёмов Антон">
         <meta name="robots" content="index, follow">
 
         <LINK HREF="css/style.css?v=1" REL= "stylesheet" TYPE="text/css">
@@ -23,6 +22,7 @@
                 Меню: <a href="/phones">Телефоны</a>
                 | <a href="/refs">Справочники</a>
                 | <a href="status">Проверить статус заказа</a>
+                | <a href="pages">Страницы</a>
             </div>
             <div style="text-align: right;">
                   <a href="/logout">Выход</a>

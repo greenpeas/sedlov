@@ -66,4 +66,19 @@ if (preg_match("/(^\/status)/i", $_SERVER['REQUEST_URI']))
 if (preg_match("/(^\/delete_ref_item)/i", $_SERVER['REQUEST_URI']))
     $controller->delete_ref_item();
 
+if (preg_match("/(^\/pages)/i", $_SERVER['REQUEST_URI']))
+    $controller->pages();
+
+if (preg_match("/(^\/add_page)/i", $_SERVER['REQUEST_URI']))
+    $controller->add_page();
+
+if (preg_match("/(^\/delete_page)/i", $_SERVER['REQUEST_URI']))
+    $controller->delete_page();
+
+if (preg_match("/(^\/edit_page)/i", $_SERVER['REQUEST_URI']))
+    $controller->edit_page();
+
+if (preg_match("/(^\/show_page)/i", $_SERVER['REQUEST_URI']))
+    $controller->show_page();
+
 $controller->notfound();

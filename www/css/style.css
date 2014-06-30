@@ -525,3 +525,38 @@ tbody td{
  tr:nth-child(even) td {
     background-color: #303030;
 }
+
+
+
+a.psz{
+    display: block;
+    background: url('../images/button_l.gif');
+    width:551px;
+    height:67px;
+    float:right;
+}
+a.psz:hover{
+    background: url('../images/button_r.gif');
+}
+
+.page_menu{
+    clear:both;
+    text-align: left;
+    display:block;
+    float:left;
+    width:300px;
+    list-style: none;
+    border:2px solid #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+.page_menu li {
+    padding:5px 0;
+}
+.page_menu_div{
+    text-align: left;
+}
+.page-content{
+    
+    font-size: 16px;
+}

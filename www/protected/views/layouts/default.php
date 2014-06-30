@@ -8,7 +8,6 @@
         <meta name="description" content="<?php echo $this->description; ?>">
 
         <meta name="keywords" content="ремонт сотовых телефонов, ремонт компьютеров, ремонт телефонов в Ставрополе, ремонт телефонов в Михайловске, Седлов А Е, Седлов Андрей">
-        <meta name="Generator" content="Артёмов Антон">
         <meta name="robots" content="index, follow">
 
         <LINK HREF="css/style.css" REL= "stylesheet" TYPE="text/css">

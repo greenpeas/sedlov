@@ -13,7 +13,7 @@ if(!empty($_GET['id'])AND ctype_digit($_GET['id'])){
     //Bug::show($_POST);
     
     $sql = "
-        DELETE FROM `phones` 
+        DELETE FROM `pages` 
         WHERE `id` = ".$_GET['id']."
         ";
     
@@ -21,6 +21,6 @@ if(!empty($_GET['id'])AND ctype_digit($_GET['id'])){
     $db->execute($sql);
     $this->page->setFlash('error', 'Запись успешно удалена');
     // Перенаправляем на список телефонов
-    $this->page->redirect('phones');
+    $this->page->redirect('pages');
     
 }

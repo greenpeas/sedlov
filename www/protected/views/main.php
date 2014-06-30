@@ -1,5 +1,5 @@
 <?php
-$this->setTitle('Главня');
+$this->setTitle('Главная');
 $this->setLayout('index');
 ?>
 
@@ -10,7 +10,8 @@ escape(document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
 screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 ";"+Math.random();//--></script><!--/LiveInternet-->
-        <div style="text-align: right;"><a href="status">Проверить статус заказа</a></div>
+        <a href="status" title="Проверить статус заказа" class="psz"></a>
+        <div style="clear:both;"></div>
 		<div style="text-align:center; padding-left:20px;">		
 						
 			<br>
@@ -20,7 +21,27 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 			8 928 252-77-97<br>8 918 756-66-89
 			</h2></div>
 			
-			<center><img src="/images/remont.jpg" alt="ремонт сотовых телефонов"><br></center>
+			<center>
+                            
+                            <?php
+                            if(!empty($pages)){
+                                echo '<div class="page_menu_div"><h2>Полезно знать</h2></div><ul class="page_menu">';
+                                
+                                foreach($pages AS $page){
+                                    
+                                    echo '<li><a href="show_page?alias='.$page['alias'].'">'.$page['title'].'</a></li>';
+                                    
+                                }
+                                
+                                
+                                echo '</ul>';
+                            }
+                            
+                            ?>
+                            
+                            <img src="/images/remont.jpg" alt="ремонт сотовых телефонов">
+                            <br>
+                        </center>
 			
 			<div style="font-size:30px;"><b>Компьютерная помощь</b></div>
 			
@@ -68,4 +89,4 @@ alt="" border="0" width="88" height="120"/></a><!--/LiveInternet-->
 			<br><br>
 		</div>
 		
-		<a href="http://sycraft.info/" target="_blank">SyCraft.info Хостинг</a> <a href="http://artyomovanton.ru" target="_blank"><strong>Создание сайтов в Ставрополе</strong></a>
+		<!--<a href="http://sycraft.info/" target="_blank">SyCraft.info Хостинг</a> <a href="http://artyomovanton.ru" target="_blank"><strong>Создание сайтов в Ставрополе</strong></a>-->

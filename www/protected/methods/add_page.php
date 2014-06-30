@@ -11,33 +11,31 @@ $db = new db;
 // если имеются данные из формы пользователя
 if(!empty($_POST)){
     
-    if(empty($_POST['date_in']))$date_in = new DateTime();
-    else $date_in = new DateTime($_POST['date_in']);
+    if(isset($_POST['public']))$public = 1;
+    else $public = 0;
     
-    $is = $db->insert("INSERT INTO `phones` "
-            . "(`family`,`id_brand`,`model`,`serial`,`fault`,`date_in`) "
+    $is = $db->insert("INSERT INTO `pages` "
+            . "(`alias`,`title`,`text`,`public`) "
             . "VALUES "
             . "("
-            . "'".$db->RealEscapeString($_POST['family'])."' "
-            . ",".$db->RealEscapeString($_POST['id_brand'])
-            . ",'".$db->RealEscapeString($_POST['model'])."' "
-            . ",'".$db->RealEscapeString($_POST['serial'])."' "
-            . ",'".$db->RealEscapeString($_POST['fault'])."' "
-            . ",".$date_in->format('Ymd')." "
+            . "'".$db->RealEscapeString($_POST['alias'])."' "
+            . ",'".$db->RealEscapeString($_POST['title'])."' "
+            . ",'".$db->RealEscapeString($_POST['text'])."' "
+            . ",".$public." "
             . ")"
             . ";");
     
     if($is){
         $this->page->setFlash('error', 'Данные сохранены');
+        $this->page->redirect('/pages');
     }
     else $this->page->setFlash('error', 'Ошибка сохранения. Причина: '.$db->error);
     
-    $this->page->redirect('/phones');
+    
 }
 
-// Выборка данных о брэндах из БД
-$brands = $db->select("SELECT * FROM `ref_brands` ORDER BY `name`;");
+
 
 // отрисовка страницы добавления устройства.
 // В рендер передается массив Брендов для ниспадающего элемента в форме
-$this->page->render('add_phone',array('brands'=>$brands));
+$this->page->render('add_page');

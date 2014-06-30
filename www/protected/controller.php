@@ -66,4 +66,20 @@ class controller {
     public function delete_ref_item() {
         require 'methods/' . __FUNCTION__ . '.php';
     }
+    
+    public function pages() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
+    public function add_page() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
+    public function delete_page() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
+    public function edit_page() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
+    public function show_page() {
+        require 'methods/' . __FUNCTION__ . '.php';
+    }
 }
