@@ -6,10 +6,23 @@ $this->setLayout('job');
 <a href="/add_phone">Добавить</a>
 
 
+<div style="text-align:right;">Статус: 
+	<?php
+	if(!empty($_GET['closed'])){
+		echo '<a href="/phones">Активные</a> | Готовые';
+	}
+	else {
+		echo 'Активные | <a href="/phones?closed=1">Готовые</a>';
+	}
+	?>
+	<form method="post" action=""><input type="text" name="q" value="<?php echo !empty($_POST['q'])?$_POST['q']:''; ?>"><input type="submit" value="Найти"></form>
+</div>
+
 
 <?php
 if (!empty($phones)) {
     ?>
+	
 <table class="phones">
     <thead>
         <tr>

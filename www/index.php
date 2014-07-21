@@ -36,7 +36,7 @@ if (preg_match("/^\/clogin$/i", $_SERVER['REQUEST_URI']))
 if (preg_match("/(^\/logout$)/i", $_SERVER['REQUEST_URI']))
     $controller->logout();
 
-if (preg_match("/(^\/phones$)/i", $_SERVER['REQUEST_URI']))
+if (preg_match("/(^\/phones)/i", $_SERVER['REQUEST_URI']))
     $controller->phones();
 
 if (preg_match("/(^\/add_phone$)/i", $_SERVER['REQUEST_URI']))

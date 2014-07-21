@@ -2,6 +2,9 @@
 <html>
     <head>
         <meta charset="utf-8">
+	<link rel="icon" href="/phone.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/phone.png" type="image/x-icon">	
+
 
         <title><?php echo $this->title; ?></title>
 
